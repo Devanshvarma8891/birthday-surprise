@@ -35,5 +35,5 @@ def birthday():
         return render_template_string(HTML_MESSAGE, name=name)
     return HTML_FORM
 
-if __name__ == "__main__":
-    app.run(debug=True)
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000, debug=True)
